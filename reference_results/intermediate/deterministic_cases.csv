@@ -1,0 +1,134 @@
+Family,Case,First,Second,Third,Same_top3_set,Same_top3_order
+Weight perturbation,C1 -20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C1 -15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C1 -10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C1 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C1 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C1 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C1 +15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C1 +20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C2 -20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C2 -15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C2 -10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C2 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C2 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C2 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C2 +15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C2 +20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C3 -20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C3 -15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C3 -10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C3 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C3 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C3 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C3 +15%,Yenimahalle,Etimesgut,Mamak,True,False
+Weight perturbation,C3 +20%,Yenimahalle,Etimesgut,Mamak,True,False
+Weight perturbation,C4 -20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C4 -15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C4 -10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C4 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C4 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C4 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C4 +15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C4 +20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C5 -20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C5 -15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C5 -10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C5 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C5 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C5 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C5 +15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C5 +20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C6 -20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C6 -15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C6 -10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C6 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C6 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C6 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C6 +15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C6 +20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C7 -20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C7 -15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C7 -10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C7 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C7 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C7 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C7 +15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C7 +20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C8 -20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C8 -15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C8 -10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C8 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C8 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C8 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C8 +15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C8 +20%,Yenimahalle,Etimesgut,Mamak,True,False
+Weight perturbation,C9 -20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C9 -15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C9 -10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C9 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C9 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C9 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C9 +15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C9 +20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C10 -20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C10 -15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C10 -10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C10 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C10 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C10 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C10 +15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C10 +20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C11 -20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C11 -15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C11 -10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C11 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C11 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C11 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C11 +15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C11 +20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C12 -20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C12 -15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C12 -10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C12 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C12 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C12 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C12 +15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C12 +20%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C13 -20%,Yenimahalle,Etimesgut,Mamak,True,False
+Weight perturbation,C13 -15%,Yenimahalle,Etimesgut,Mamak,True,False
+Weight perturbation,C13 -10%,Yenimahalle,Etimesgut,Mamak,True,False
+Weight perturbation,C13 -5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C13 +5%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C13 +10%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C13 +15%,Etimesgut,Yenimahalle,Mamak,True,True
+Weight perturbation,C13 +20%,Etimesgut,Yenimahalle,Mamak,True,True
+WASPAS parameter,0,Etimesgut,Yenimahalle,Mamak,True,True
+WASPAS parameter,0.25,Etimesgut,Yenimahalle,Mamak,True,True
+WASPAS parameter,0.5,Etimesgut,Yenimahalle,Mamak,True,True
+WASPAS parameter,0.75,Etimesgut,Yenimahalle,Mamak,True,True
+WASPAS parameter,1,Etimesgut,Yenimahalle,Mamak,True,True
+CoCoSo parameter,0,Etimesgut,Yenimahalle,Mamak,True,True
+CoCoSo parameter,0.25,Etimesgut,Yenimahalle,Mamak,True,True
+CoCoSo parameter,0.5,Etimesgut,Yenimahalle,Mamak,True,True
+CoCoSo parameter,0.75,Etimesgut,Yenimahalle,Mamak,True,True
+CoCoSo parameter,1,Etimesgut,Yenimahalle,Mamak,True,True
+VIKOR parameter,0,Etimesgut,Yenimahalle,Mamak,True,True
+VIKOR parameter,0.25,Etimesgut,Yenimahalle,Mamak,True,True
+VIKOR parameter,0.5,Etimesgut,Yenimahalle,Mamak,True,True
+VIKOR parameter,0.75,Etimesgut,Yenimahalle,Mamak,True,True
+VIKOR parameter,1,Etimesgut,Yenimahalle,Mamak,True,True
+Single criterion deletion,C1,Etimesgut,Mamak,Sincan,False,False
+Single criterion deletion,C2,Etimesgut,Yenimahalle,Mamak,True,True
+Single criterion deletion,C3,Etimesgut,Yenimahalle,Mamak,True,True
+Single criterion deletion,C4,Etimesgut,Yenimahalle,Mamak,True,True
+Single criterion deletion,C5,Etimesgut,Yenimahalle,Mamak,True,True
+Single criterion deletion,C6,Etimesgut,Yenimahalle,Mamak,True,True
+Single criterion deletion,C7,Etimesgut,Yenimahalle,Mamak,True,True
+Single criterion deletion,C8,Etimesgut,Yenimahalle,Mamak,True,True
+Single criterion deletion,C9,Etimesgut,Çankaya,Yenimahalle,False,False
+Single criterion deletion,C10,Etimesgut,Yenimahalle,Mamak,True,True
+Single criterion deletion,C11,Etimesgut,Yenimahalle,Mamak,True,True
+Single criterion deletion,C12,Etimesgut,Yenimahalle,Mamak,True,True
+Single criterion deletion,C13,Yenimahalle,Etimesgut,Mamak,True,False
+Grouped deletion,C11 C12 C13,Yenimahalle,Etimesgut,Mamak,True,False
