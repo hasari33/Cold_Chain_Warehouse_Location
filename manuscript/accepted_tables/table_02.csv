@@ -1,0 +1,11 @@
+Parameter,Value,Interpretation
+"District land price, pi",TRY/ m2,Time-specific proxy for land acquisition cost; C9 is a cost criterion
+"District population, Pi",Persons,Base population used to estimate the potential labor pool
+Working-age share,0.685,Multiplier used to estimate district-level workforce accessibility
+"Road distance, di",km,"Input for accessibility, emission, and cold-chain exposure calculations"
+Shortest candidate distance,273 km,Reference distance used to normalize C11
+Heavy-freight emission factor,0.129 kg CO2e/t-km,Factor used to estimate comparative road-freight emissions
+Average refrigerated transport speed,70 km/h,Used to approximate intercity transport time
+Ambient reference temperature,8∘C,Reference threshold for thermal exposure
+Mean positive temperature excess,5.9∘C,Climate coefficient used in C13
+"Expert weights, qk",0.20,Ensures equal contribution of the five professional perspectives

@@ -1,0 +1,7 @@
+Scenario,Weight structure,1st,2nd,3rd
+Baseline SF-AHP,Normalized SF-AHP weight vector,Etimesgut,Yenimahalle,Mamak
+Equal weights,wⱼ = 1/13 = 0.0769,Yenimahalle,Etimesgut,Mamak
+Demand-operational,60% to C1 and C3-C8,Yenimahalle,Etimesgut,Mamak
+Accessibility-infrastructure,"60% to C2, C10 and C11",Etimesgut,Çankaya,Yenimahalle
+Economic,60% to C9,Polatlı,Şereflikoçhisar,Sincan
+Environmental-risk,60% to C12 and C13,Şereflikoçhisar,Kızılcahamam,Polatlı

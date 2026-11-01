@@ -1,0 +1,323 @@
+{
+  "01": [
+    [
+      "Code",
+      "Criterion",
+      "Unit",
+      "Direction",
+      "Data origin",
+      "Decision rationale"
+    ],
+    [
+      "C1",
+      "Number of branches",
+      "count",
+      "Benefit",
+      "Company operational data",
+      "Service coverage and warehouse utilization"
+    ],
+    [
+      "C2",
+      "Road distance from Yenişehir",
+      "km",
+      "Cost",
+      "Road-distance input",
+      "Transport time, fuel use and exposure"
+    ],
+    [
+      "C3",
+      "Meatball-product load",
+      "kg/period",
+      "Benefit",
+      "Company shipment data",
+      "High-turnover demand concentration"
+    ],
+    [
+      "C4",
+      "Raw-meat load",
+      "kg/period",
+      "Benefit",
+      "Company shipment data",
+      "Temperature-sensitive demand concentration"
+    ],
+    [
+      "C5",
+      "Frozen-product load",
+      "kg/period",
+      "Benefit",
+      "Company shipment data",
+      "Frozen-chain service requirement"
+    ],
+    [
+      "C6",
+      "Consumables volume",
+      "kg/period",
+      "Benefit",
+      "Company shipment data",
+      "Total handling and complementary logistics"
+    ],
+    [
+      "C7",
+      "Breakfast-product volume",
+      "kg/period",
+      "Benefit",
+      "Company shipment data",
+      "Regular replenishment demand"
+    ],
+    [
+      "C8",
+      "Poultry load",
+      "kg/period",
+      "Benefit",
+      "Company shipment data",
+      "Perishable and microbiologically sensitive demand"
+    ],
+    [
+      "C9",
+      "Land acquisition cost",
+      "TRY/m²",
+      "Cost",
+      "District market-price proxy",
+      "Investment and operating-cost pressure"
+    ],
+    [
+      "C10",
+      "Workforce accessibility",
+      "persons",
+      "Benefit",
+      "Population × working-age share",
+      "Available labor-pool proxy"
+    ],
+    [
+      "C11",
+      "Main-road connectivity",
+      "index",
+      "Benefit",
+      "Minimum distance / district distance",
+      "Distance-based route-accessibility proxy"
+    ],
+    [
+      "C12",
+      "Carbon emissions",
+      "kg CO₂e/recorded load period",
+      "Cost",
+      "Load–distance emission model",
+      "Transport environmental burden"
+    ],
+    [
+      "C13",
+      "Cold-chain risk coefficient",
+      "tonne·h·°C index",
+      "Cost",
+      "Load–time–temperature model",
+      "Cumulative time–temperature exposure"
+    ]
+  ],
+  "02": [
+    [
+      "Parameter",
+      "Value",
+      "Interpretation"
+    ],
+    [
+      "District land price, pi",
+      "TRY/ m2",
+      "Time-specific proxy for land acquisition cost; C9 is a cost criterion"
+    ],
+    [
+      "District population, Pi",
+      "Persons",
+      "Base population used to estimate the potential labor pool"
+    ],
+    [
+      "Working-age share",
+      "0.685",
+      "Multiplier used to estimate district-level workforce accessibility"
+    ],
+    [
+      "Road distance, di",
+      "km",
+      "Input for accessibility, emission, and cold-chain exposure calculations"
+    ],
+    [
+      "Shortest candidate distance",
+      "273 km",
+      "Reference distance used to normalize C11"
+    ],
+    [
+      "Heavy-freight emission factor",
+      "0.129 kg CO2e/t-km",
+      "Factor used to estimate comparative road-freight emissions"
+    ],
+    [
+      "Average refrigerated transport speed",
+      "70 km/h",
+      "Used to approximate intercity transport time"
+    ],
+    [
+      "Ambient reference temperature",
+      "8∘C",
+      "Reference threshold for thermal exposure"
+    ],
+    [
+      "Mean positive temperature excess",
+      "5.9∘C",
+      "Climate coefficient used in C13"
+    ],
+    [
+      "Expert weights, qk",
+      "0.20",
+      "Ensures equal contribution of the five professional perspectives"
+    ]
+  ],
+  "04": [
+    [
+      "ID",
+      "Functional department",
+      "Relevant experience domain"
+    ],
+    [
+      "P1",
+      "Logistics and distribution",
+      "Road freight, branch delivery, and vehicle utilization"
+    ],
+    [
+      "P2",
+      "Cold-chain quality assurance",
+      "Temperature control, food safety, and product sensitivity"
+    ],
+    [
+      "P3",
+      "Finance and real estate",
+      "Land cost, transport cost, and infrastructure expenditure"
+    ],
+    [
+      "P4",
+      "Operations planning",
+      "Demand planning, loading, and replenishment scheduling"
+    ],
+    [
+      "P5",
+      "Sustainability and supply chain",
+      "Emissions, road connectivity, and refrigerated transport"
+    ]
+  ],
+  "05": [
+    [
+      "n",
+      "RI",
+      "n",
+      "RI"
+    ],
+    [
+      "1",
+      "0.00",
+      "9",
+      "1.45"
+    ],
+    [
+      "2",
+      "0.00",
+      "10",
+      "1.49"
+    ],
+    [
+      "3",
+      "0.58",
+      "11",
+      "1.51"
+    ],
+    [
+      "4",
+      "0.90",
+      "12",
+      "1.48"
+    ],
+    [
+      "5",
+      "1.12",
+      "13",
+      "1.56"
+    ],
+    [
+      "6",
+      "1.24",
+      "14",
+      "1.57"
+    ],
+    [
+      "7",
+      "1.32",
+      "15",
+      "1.58"
+    ],
+    [
+      "8",
+      "1.41",
+      "",
+      ""
+    ]
+  ],
+  "A1": [
+    [
+      "Code",
+      "Linguistic term",
+      "(μ, ν, π)",
+      "Score index"
+    ],
+    [
+      "AMI",
+      "Absolutely more important",
+      "(0.9, 0.1, 0.0)",
+      "9"
+    ],
+    [
+      "VHI",
+      "Very high importance",
+      "(0.8, 0.2, 0.1)",
+      "7"
+    ],
+    [
+      "HI",
+      "High importance",
+      "(0.7, 0.3, 0.2)",
+      "5"
+    ],
+    [
+      "SMI",
+      "Slightly more important",
+      "(0.6, 0.4, 0.3)",
+      "3"
+    ],
+    [
+      "EI",
+      "Equal importance",
+      "(0.5, 0.4, 0.4)",
+      "1"
+    ],
+    [
+      "SLI",
+      "Slightly less important",
+      "(0.4, 0.6, 0.3)",
+      "1/3"
+    ],
+    [
+      "LI",
+      "Low importance",
+      "(0.3, 0.7, 0.2)",
+      "1/5"
+    ],
+    [
+      "VLI",
+      "Very low importance",
+      "(0.2, 0.8, 0.1)",
+      "1/7"
+    ],
+    [
+      "ALI",
+      "Absolutely low importance",
+      "(0.1, 0.9, 0.0)",
+      "1/9"
+    ]
+  ]
+}

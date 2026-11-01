@@ -1,0 +1,8 @@
+Indicator,Calculation,Result
+C9,District-level land-price proxy,"31,947 TRY/m²"
+C10,"952,198 × 0.685","652,255.63 persons"
+C11,273 / 381,0.7165
+Total shipment load,"4,950 + 330 + 9.96 + 318.54 + 97.06 + 9.78","5,715.34 kg"
+Cold-chain load,"4,950 + 330 + 9.96 + 97.06 + 9.78","5,396.80 kg"
+C12,5.71534 t × 381 km × 0.129 kg CO₂e/(t·km),280.903 kg CO₂e/recorded load period
+C13,5.39680 t × (381/70 h) × 5.9°C,173.307 tonne·h·°C

@@ -1,0 +1,38 @@
+Element,Input,Implementation,Output,Type
+Table 1,data/static_tables.json,src/cold_chain/publication.py (Definitions),results/tables/table_01.csv,Main table
+Table 2,data/parameters.json,src/cold_chain/publication.py (Assumptions),results/tables/table_02.csv,Main table
+Table 3,data/observed_inputs.csv,src/cold_chain/publication.py (derive_inputs),results/tables/table_03.csv,Main table
+Table 4,data/practitioners.csv,src/cold_chain/publication.py (Practitioner profiles),results/tables/table_04.csv,Main table
+Table 5,data/static_tables.json,src/cold_chain/publication.py (Adopted RI values),results/tables/table_05.csv,Main table
+Table 6,data/pairwise_practitioners.csv,src/cold_chain/publication.py (consistency),results/tables/table_06.csv,Main table
+Table 7,data/pairwise_practitioners.csv,src/cold_chain/publication.py (sf_weights),results/tables/table_07.csv,Main table
+Table 8,data/observed_inputs.csv,src/cold_chain/publication.py (Evaluator.evaluate),results/tables/table_08.csv,Main table
+Table 9,results/intermediate/baseline_results.csv,src/cold_chain/publication.py (agreement),results/tables/table_09.csv,Main table
+Table 10,results/intermediate/baseline_results.csv,src/cold_chain/publication.py (baseline_frame),results/tables/table_10.csv,Main table
+Table 11,data/parameters.json,src/cold_chain/publication.py (Deterministic cases),results/tables/table_11.csv,Main table
+Table 12,data/parameters.json,src/cold_chain/publication.py (Thematic scenarios),results/tables/table_12.csv,Main table
+Table 13,data/parameters.json,src/cold_chain/publication.py (Dirichlet simulation),results/tables/table_13.csv,Main table
+Table 14,results/intermediate/cocoso_minmax.csv,src/cold_chain/publication.py (Weighted auxiliary utility),results/tables/table_14.csv,Main table
+Table A1,data/fuzzy_scale.csv,src/cold_chain/publication.py,results/tables/table_A1.csv,Appendix table
+Table B1,data/pairwise_practitioners.csv,src/cold_chain/publication.py,results/tables/table_B1.csv,Appendix table
+Table B2,data/pairwise_practitioners.csv,src/cold_chain/publication.py,results/tables/table_B2.csv,Appendix table
+Table B3,data/pairwise_practitioners.csv,src/cold_chain/publication.py,results/tables/table_B3.csv,Appendix table
+Table B4,data/pairwise_practitioners.csv,src/cold_chain/publication.py,results/tables/table_B4.csv,Appendix table
+Table B5,data/pairwise_practitioners.csv,src/cold_chain/publication.py,results/tables/table_B5.csv,Appendix table
+Table C1,data/observed_inputs.csv,src/cold_chain/publication.py,results/tables/table_C1.csv,Appendix table
+Figure 1,assets/figure_01_workflow.png,src/cold_chain/plots.py,results/figures/figure_01_workflow.png,Figure
+Figure 2,results/intermediate/baseline_results.csv,src/cold_chain/plots.py,results/figures/figure_02_method_ranks.png,Figure
+Figure 3,results/intermediate/spearman.csv,src/cold_chain/plots.py,results/figures/figure_03_rank_agreement.png,Figure
+Figure S1,results/intermediate/criterion_weights.csv,src/cold_chain/plots.py,results/figures/figure_S1_weights.png,Figure
+Figure S2,results/intermediate/deterministic_full_results.csv,src/cold_chain/plots.py,results/figures/figure_S2_structural_sensitivity.png,Figure
+Figure S3,results/monte_carlo/rank_acceptability.csv,src/cold_chain/plots.py,results/figures/figure_S3_rank_acceptability.png,Figure
+Equations 1–6,data/,derive_inputs,results/intermediate/ and results/monte_carlo/,Equation group
+Equations 7–17,data/,"sf_weights, consistency",results/intermediate/ and results/monte_carlo/,Equation group
+Equations 18–28,data/,Evaluator.evaluate (EDAS),results/intermediate/ and results/monte_carlo/,Equation group
+Equations 29–32,data/,Evaluator.evaluate (WASPAS),results/intermediate/ and results/monte_carlo/,Equation group
+Equations 33–40,data/,Evaluator.evaluate (CoCoSo),results/intermediate/ and results/monte_carlo/,Equation group
+Equations 41–47,data/,Evaluator.evaluate (TOPSIS),results/intermediate/ and results/monte_carlo/,Equation group
+Equations 48–53,data/,Evaluator.evaluate (VIKOR),results/intermediate/ and results/monte_carlo/,Equation group
+Equations 54,data/,ordinal_consensus,results/intermediate/ and results/monte_carlo/,Equation group
+Equations 55,data/,agreement,results/intermediate/ and results/monte_carlo/,Equation group
+Equations 56,data/,pipeline.run (PCG64 Dirichlet),results/intermediate/ and results/monte_carlo/,Equation group

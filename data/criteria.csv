@@ -1,0 +1,14 @@
+Criterion,Name,Unit,Direction,Origin,Rationale
+C1,Number of branches,count,Benefit,Company operational data,Service coverage and warehouse utilization
+C2,Road distance from Yenişehir,km,Cost,Road-distance input,"Transport time, fuel use and exposure"
+C3,Meatball-product load,kg/period,Benefit,Company shipment data,High-turnover demand concentration
+C4,Raw-meat load,kg/period,Benefit,Company shipment data,Temperature-sensitive demand concentration
+C5,Frozen-product load,kg/period,Benefit,Company shipment data,Frozen-chain service requirement
+C6,Consumables volume,kg/period,Benefit,Company shipment data,Total handling and complementary logistics
+C7,Breakfast-product volume,kg/period,Benefit,Company shipment data,Regular replenishment demand
+C8,Poultry load,kg/period,Benefit,Company shipment data,Perishable and microbiologically sensitive demand
+C9,Land acquisition cost,TRY/m²,Cost,District market-price proxy,Investment and operating-cost pressure
+C10,Workforce accessibility,persons,Benefit,Population × working-age share,Available labor-pool proxy
+C11,Main-road connectivity,index,Benefit,Minimum distance / district distance,Distance-based route-accessibility proxy
+C12,Carbon emissions,kg CO₂e/recorded load period,Cost,Load–distance emission model,Transport environmental burden
+C13,Cold-chain risk coefficient,tonne·h·°C index,Cost,Load–time–temperature model,Cumulative time–temperature exposure

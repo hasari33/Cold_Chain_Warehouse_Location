@@ -1,0 +1,9 @@
+Criterion,Description,Weighted contribution
+C4,Raw-meat load,0.07878
+C3,Meatball-product load,0.06945
+C5,Frozen-product load,0.06918
+C8,Poultry load,0.06877
+C2,Distance,0.05815
+C1,Number of branches,0.04953
+C9,Land acquisition cost,0.04757
+C7,Breakfast-product volume,0.04720

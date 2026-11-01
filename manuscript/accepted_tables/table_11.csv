@@ -1,0 +1,7 @@
+Analysis family,Cases,Design,Consensus leader,Top-three behavior
+All-criterion perturbation,104,"Each C1-C13 varied by ±5%, ±10%, ±15%, ±20%",Etimesgut 98/104; Yenimahalle 6/104,Set unchanged in 104/104; order changes in 6
+WASPAS λ sweep,5,"0, 0.25, 0.50, 0.75, 1",Etimesgut 5/5,Top-three order unchanged
+CoCoSo λ sweep,5,"0, 0.25, 0.50, 0.75, 1",Etimesgut 5/5,Top-three order unchanged
+VIKOR v sweep,5,"0, 0.25, 0.50, 0.75, 1",Etimesgut 5/5,Top-three order unchanged
+Leave-one-criterion-out,13,One criterion removed and remaining weights normalized,Etimesgut 12/13; Yenimahalle 1/13,Set changes in 2; order changes in 3
+Grouped structural deletion,1,C11-C13 removed jointly,Yenimahalle,Yenimahalle–Etimesgut–Mamak
