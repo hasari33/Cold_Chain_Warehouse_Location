@@ -1,0 +1,14 @@
+Criterion,Name,Unit,Direction,Baseline_weight
+C1,Number of branches,count,Benefit,0.07557
+C2,Distance,km,Cost,0.08856
+C3,Meatball-product load,kg/period,Benefit,0.08752
+C4,Raw-meat load,kg/period,Benefit,0.08834
+C5,Frozen-product load,kg/period,Benefit,0.07657
+C6,Consumables volume,kg/period,Benefit,0.04854
+C7,Breakfast-product volume,kg/period,Benefit,0.05899
+C8,Poultry load,kg/period,Benefit,0.08454
+C9,Rental/land cost,TRY/m2,Cost,0.07021
+C10,Workforce accessibility,persons,Benefit,0.07086
+C11,Main-road connectivity,index,Benefit,0.08272
+C12,Carbon emissions,kg CO2e/shipment,Cost,0.07895
+C13,Cold-chain risk coefficient,tonne-hour-degree-C index,Cost,0.08863

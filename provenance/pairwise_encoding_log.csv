@@ -1,0 +1,5 @@
+Practitioner,Row,Column,Original,Completed,Policy
+P2,C9,C2,LI,VLI,upper
+P2,C10,C2,LI,VLI,upper
+P2,C9,C4,VLI,ALI,upper
+P2,C10,C4,VLI,ALI,upper

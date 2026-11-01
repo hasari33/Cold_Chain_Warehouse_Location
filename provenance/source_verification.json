@@ -1,0 +1,42 @@
+{
+  "observations_C1_C9_preserved": 135,
+  "derived_values_checked": 60,
+  "practitioner_entries": 845,
+  "reciprocal_encoding_entries": [
+    {
+      "Practitioner": "P2",
+      "Row": "C9",
+      "Column": "C2",
+      "Original": "LI",
+      "Completed": "VLI",
+      "Policy": "upper"
+    },
+    {
+      "Practitioner": "P2",
+      "Row": "C10",
+      "Column": "C2",
+      "Original": "LI",
+      "Completed": "VLI",
+      "Policy": "upper"
+    },
+    {
+      "Practitioner": "P2",
+      "Row": "C9",
+      "Column": "C4",
+      "Original": "VLI",
+      "Completed": "ALI",
+      "Policy": "upper"
+    },
+    {
+      "Practitioner": "P2",
+      "Row": "C10",
+      "Column": "C4",
+      "Original": "VLI",
+      "Completed": "ALI",
+      "Policy": "upper"
+    }
+  ],
+  "source_workbook_sha256": "5b93525ccf7e6e4fda320b867dcf06c2d95efadd9a9b2b775a6a58ab80891f23",
+  "approved_source_sha256": "2d72dd67906e3e24456468d7a7a1cf44610cf71316ae0d52233396421b86311c",
+  "status": "PASS"
+}
