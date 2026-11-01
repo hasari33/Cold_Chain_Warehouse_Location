@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when using these data and methods."
+title: "Robust Cold-Chain Warehouse Location Selection Under Uncertainty An Integrated Spherical Fuzzy and Multi-Method Decision Framework"
+type: software
+version: 2.0.0
+date-released: 2026-10-31
+authors:
+  - family-names: "Sarıkaya"
+    given-names: "Hüseyin Ali"
+    orcid: "https://orcid.org/0000-0001-5072-5067"
+keywords:
+  - cold-chain logistics
+  - warehouse location
+  - spherical fuzzy AHP
+  - multicriteria decision making

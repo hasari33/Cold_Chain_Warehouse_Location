@@ -1,0 +1,2552 @@
+{
+  "01": [
+    [
+      "Code",
+      "Criterion",
+      "Unit",
+      "Direction",
+      "Data origin",
+      "Decision rationale"
+    ],
+    [
+      "C1",
+      "Number of branches",
+      "count",
+      "Benefit",
+      "Company operational data",
+      "Service coverage and warehouse utilization"
+    ],
+    [
+      "C2",
+      "Road distance from Yenişehir",
+      "km",
+      "Cost",
+      "Road-distance input",
+      "Transport time, fuel use and exposure"
+    ],
+    [
+      "C3",
+      "Meatball-product load",
+      "kg/period",
+      "Benefit",
+      "Company shipment data",
+      "High-turnover demand concentration"
+    ],
+    [
+      "C4",
+      "Raw-meat load",
+      "kg/period",
+      "Benefit",
+      "Company shipment data",
+      "Temperature-sensitive demand concentration"
+    ],
+    [
+      "C5",
+      "Frozen-product load",
+      "kg/period",
+      "Benefit",
+      "Company shipment data",
+      "Frozen-chain service requirement"
+    ],
+    [
+      "C6",
+      "Consumables volume",
+      "kg/period",
+      "Benefit",
+      "Company shipment data",
+      "Total handling and complementary logistics"
+    ],
+    [
+      "C7",
+      "Breakfast-product volume",
+      "kg/period",
+      "Benefit",
+      "Company shipment data",
+      "Regular replenishment demand"
+    ],
+    [
+      "C8",
+      "Poultry load",
+      "kg/period",
+      "Benefit",
+      "Company shipment data",
+      "Perishable and microbiologically sensitive demand"
+    ],
+    [
+      "C9",
+      "Land acquisition cost",
+      "TRY/m²",
+      "Cost",
+      "District market-price proxy",
+      "Investment and operating-cost pressure"
+    ],
+    [
+      "C10",
+      "Workforce accessibility",
+      "persons",
+      "Benefit",
+      "Population × working-age share",
+      "Available labor-pool proxy"
+    ],
+    [
+      "C11",
+      "Main-road connectivity",
+      "index",
+      "Benefit",
+      "Minimum distance / district distance",
+      "Distance-based route-accessibility proxy"
+    ],
+    [
+      "C12",
+      "Carbon emissions",
+      "kg CO₂e/recorded load period",
+      "Cost",
+      "Load–distance emission model",
+      "Transport environmental burden"
+    ],
+    [
+      "C13",
+      "Cold-chain risk coefficient",
+      "tonne·h·°C index",
+      "Cost",
+      "Load–time–temperature model",
+      "Cumulative time–temperature exposure"
+    ]
+  ],
+  "02": [
+    [
+      "Parameter",
+      "Value",
+      "Interpretation"
+    ],
+    [
+      "District land price, pi",
+      "TRY/ m2",
+      "Time-specific proxy for land acquisition cost; C9 is a cost criterion"
+    ],
+    [
+      "District population, Pi",
+      "Persons",
+      "Base population used to estimate the potential labor pool"
+    ],
+    [
+      "Working-age share",
+      "0.685",
+      "Multiplier used to estimate district-level workforce accessibility"
+    ],
+    [
+      "Road distance, di",
+      "km",
+      "Input for accessibility, emission, and cold-chain exposure calculations"
+    ],
+    [
+      "Shortest candidate distance",
+      "273 km",
+      "Reference distance used to normalize C11"
+    ],
+    [
+      "Heavy-freight emission factor",
+      "0.129 kg CO2e/t-km",
+      "Factor used to estimate comparative road-freight emissions"
+    ],
+    [
+      "Average refrigerated transport speed",
+      "70 km/h",
+      "Used to approximate intercity transport time"
+    ],
+    [
+      "Ambient reference temperature",
+      "8∘C",
+      "Reference threshold for thermal exposure"
+    ],
+    [
+      "Mean positive temperature excess",
+      "5.9∘C",
+      "Climate coefficient used in C13"
+    ],
+    [
+      "Expert weights, qk",
+      "0.20",
+      "Ensures equal contribution of the five professional perspectives"
+    ]
+  ],
+  "04": [
+    [
+      "ID",
+      "Functional department",
+      "Relevant experience domain"
+    ],
+    [
+      "P1",
+      "Logistics and distribution",
+      "Road freight, branch delivery, and vehicle utilization"
+    ],
+    [
+      "P2",
+      "Cold-chain quality assurance",
+      "Temperature control, food safety, and product sensitivity"
+    ],
+    [
+      "P3",
+      "Finance and real estate",
+      "Land cost, transport cost, and infrastructure expenditure"
+    ],
+    [
+      "P4",
+      "Operations planning",
+      "Demand planning, loading, and replenishment scheduling"
+    ],
+    [
+      "P5",
+      "Sustainability and supply chain",
+      "Emissions, road connectivity, and refrigerated transport"
+    ]
+  ],
+  "05": [
+    [
+      "n",
+      "RI",
+      "n",
+      "RI"
+    ],
+    [
+      "1",
+      "0.00",
+      "9",
+      "1.45"
+    ],
+    [
+      "2",
+      "0.00",
+      "10",
+      "1.49"
+    ],
+    [
+      "3",
+      "0.58",
+      "11",
+      "1.51"
+    ],
+    [
+      "4",
+      "0.90",
+      "12",
+      "1.48"
+    ],
+    [
+      "5",
+      "1.12",
+      "13",
+      "1.56"
+    ],
+    [
+      "6",
+      "1.24",
+      "14",
+      "1.57"
+    ],
+    [
+      "7",
+      "1.32",
+      "15",
+      "1.58"
+    ],
+    [
+      "8",
+      "1.41",
+      "",
+      ""
+    ]
+  ],
+  "A1": [
+    [
+      "Code",
+      "Linguistic term",
+      "(μ, ν, π)",
+      "Score index"
+    ],
+    [
+      "AMI",
+      "Absolutely more important",
+      "(0.9, 0.1, 0.0)",
+      "9"
+    ],
+    [
+      "VHI",
+      "Very high importance",
+      "(0.8, 0.2, 0.1)",
+      "7"
+    ],
+    [
+      "HI",
+      "High importance",
+      "(0.7, 0.3, 0.2)",
+      "5"
+    ],
+    [
+      "SMI",
+      "Slightly more important",
+      "(0.6, 0.4, 0.3)",
+      "3"
+    ],
+    [
+      "EI",
+      "Equal importance",
+      "(0.5, 0.4, 0.4)",
+      "1"
+    ],
+    [
+      "SLI",
+      "Slightly less important",
+      "(0.4, 0.6, 0.3)",
+      "1/3"
+    ],
+    [
+      "LI",
+      "Low importance",
+      "(0.3, 0.7, 0.2)",
+      "1/5"
+    ],
+    [
+      "VLI",
+      "Very low importance",
+      "(0.2, 0.8, 0.1)",
+      "1/7"
+    ],
+    [
+      "ALI",
+      "Absolutely low importance",
+      "(0.1, 0.9, 0.0)",
+      "1/9"
+    ]
+  ],
+  "03": [
+    [
+      "Indicator",
+      "Calculation",
+      "Result"
+    ],
+    [
+      "C9",
+      "District-level land-price proxy",
+      "31,947 TRY/m²"
+    ],
+    [
+      "C10",
+      "952,198 × 0.685",
+      "652,255.63 persons"
+    ],
+    [
+      "C11",
+      "273 / 381",
+      "0.7165"
+    ],
+    [
+      "Total shipment load",
+      "4,950 + 330 + 9.96 + 318.54 + 97.06 + 9.78",
+      "5,715.34 kg"
+    ],
+    [
+      "Cold-chain load",
+      "4,950 + 330 + 9.96 + 97.06 + 9.78",
+      "5,396.80 kg"
+    ],
+    [
+      "C12",
+      "5.71534 t × 381 km × 0.129 kg CO₂e/(t·km)",
+      "280.903 kg CO₂e/recorded load period"
+    ],
+    [
+      "C13",
+      "5.39680 t × (381/70 h) × 5.9°C",
+      "173.307 tonne·h·°C"
+    ]
+  ],
+  "06": [
+    [
+      "Participant",
+      "λmax",
+      "CI",
+      "CR",
+      "Decision"
+    ],
+    [
+      "P1",
+      "13.5828",
+      "0.0486",
+      "0.0311",
+      "Acceptable"
+    ],
+    [
+      "P2",
+      "13.4368",
+      "0.0364",
+      "0.0233",
+      "Acceptable"
+    ],
+    [
+      "P3",
+      "13.3540",
+      "0.0295",
+      "0.0189",
+      "Acceptable"
+    ],
+    [
+      "P4",
+      "13.3986",
+      "0.0332",
+      "0.0213",
+      "Acceptable"
+    ],
+    [
+      "P5",
+      "13.4155",
+      "0.0346",
+      "0.0222",
+      "Acceptable"
+    ]
+  ],
+  "07": [
+    [
+      "Code",
+      "Criterion",
+      "Weight",
+      "Rank"
+    ],
+    [
+      "C2",
+      "Road distance from Yenişehir",
+      "0.09033",
+      "1"
+    ],
+    [
+      "C4",
+      "Raw-meat load",
+      "0.08980",
+      "2"
+    ],
+    [
+      "C3",
+      "Meatball-product load",
+      "0.08975",
+      "3"
+    ],
+    [
+      "C13",
+      "Cold-chain risk coefficient",
+      "0.08972",
+      "4"
+    ],
+    [
+      "C8",
+      "Poultry load",
+      "0.08441",
+      "5"
+    ],
+    [
+      "C11",
+      "Main-road connectivity",
+      "0.08255",
+      "6"
+    ],
+    [
+      "C12",
+      "Carbon emissions",
+      "0.07881",
+      "7"
+    ],
+    [
+      "C5",
+      "Frozen-product load",
+      "0.07541",
+      "8"
+    ],
+    [
+      "C1",
+      "Number of branches",
+      "0.07429",
+      "9"
+    ],
+    [
+      "C9",
+      "Land acquisition cost",
+      "0.06964",
+      "10"
+    ],
+    [
+      "C10",
+      "Workforce accessibility",
+      "0.06948",
+      "11"
+    ],
+    [
+      "C7",
+      "Breakfast-product volume",
+      "0.05749",
+      "12"
+    ],
+    [
+      "C6",
+      "Consumables volume",
+      "0.04833",
+      "13"
+    ]
+  ],
+  "08": [
+    [
+      "Alternative",
+      "EDAS ↑",
+      "WASPAS ↑",
+      "CoCoSo ↑",
+      "TOPSIS ↑",
+      "VIKOR ↓"
+    ],
+    [
+      "Çankaya",
+      "0.5845 (5)",
+      "0.6586 (1)",
+      "2.1155 (6)",
+      "0.5233 (9)",
+      "0.5427 (7)"
+    ],
+    [
+      "Yenimahalle",
+      "0.7797 (1)",
+      "0.6557 (2)",
+      "2.4254 (2)",
+      "0.6551 (2)",
+      "0.4369 (5)"
+    ],
+    [
+      "Etimesgut",
+      "0.7403 (2)",
+      "0.6414 (3)",
+      "2.5153 (1)",
+      "0.6556 (1)",
+      "0.0039 (1)"
+    ],
+    [
+      "Mamak",
+      "0.6930 (3)",
+      "0.6224 (4)",
+      "2.3430 (3)",
+      "0.6321 (3)",
+      "0.4165 (3)"
+    ],
+    [
+      "Gölbaşı",
+      "0.5265 (6)",
+      "0.5381 (6)",
+      "2.2681 (4)",
+      "0.5558 (6)",
+      "0.1809 (2)"
+    ],
+    [
+      "Şereflikoçhisar",
+      "0.4285 (9)",
+      "0.4925 (10)",
+      "1.8649 (12)",
+      "0.5354 (8)",
+      "0.7982 (13)"
+    ],
+    [
+      "Keçiören",
+      "0.5024 (7)",
+      "0.5024 (8)",
+      "1.9112 (10)",
+      "0.5587 (5)",
+      "0.6520 (10)"
+    ],
+    [
+      "Sincan",
+      "0.5910 (4)",
+      "0.5685 (5)",
+      "2.1747 (5)",
+      "0.5935 (4)",
+      "0.4222 (4)"
+    ],
+    [
+      "Altındağ",
+      "0.4082 (10)",
+      "0.4971 (9)",
+      "1.9396 (8)",
+      "0.5164 (10)",
+      "0.6907 (11)"
+    ],
+    [
+      "Pursaklar",
+      "0.3711 (11)",
+      "0.4738 (11)",
+      "1.9323 (9)",
+      "0.5052 (11)",
+      "0.5947 (8)"
+    ],
+    [
+      "Polatlı",
+      "0.4630 (8)",
+      "0.5220 (7)",
+      "2.0613 (7)",
+      "0.5411 (7)",
+      "0.4392 (6)"
+    ],
+    [
+      "Kahramankazan",
+      "0.2893 (12)",
+      "0.4252 (12)",
+      "1.8778 (11)",
+      "0.4743 (14)",
+      "0.6295 (9)"
+    ],
+    [
+      "Elmadağ",
+      "0.2784 (13)",
+      "0.4225 (13)",
+      "1.8056 (13)",
+      "0.4922 (12)",
+      "0.7208 (12)"
+    ],
+    [
+      "Akyurt",
+      "0.1838 (15)",
+      "0.3716 (15)",
+      "1.6651 (14)",
+      "0.4578 (15)",
+      "0.9555 (15)"
+    ],
+    [
+      "Kızılcahamam",
+      "0.2108 (14)",
+      "0.4139 (14)",
+      "1.3118 (15)",
+      "0.4747 (13)",
+      "0.8962 (14)"
+    ]
+  ],
+  "09": [
+    [
+      "Method",
+      "EDAS",
+      "WASPAS",
+      "CoCoSo",
+      "TOPSIS",
+      "VIKOR"
+    ],
+    [
+      "EDAS",
+      "1.00000",
+      "0.95714",
+      "0.93214",
+      "0.94643",
+      "0.84643"
+    ],
+    [
+      "WASPAS",
+      "0.95714",
+      "1.00000",
+      "0.91071",
+      "0.83929",
+      "0.81429"
+    ],
+    [
+      "CoCoSo",
+      "0.93214",
+      "0.91071",
+      "1.00000",
+      "0.86071",
+      "0.93929"
+    ],
+    [
+      "TOPSIS",
+      "0.94643",
+      "0.83929",
+      "0.86071",
+      "1.00000",
+      "0.79286"
+    ],
+    [
+      "VIKOR",
+      "0.84643",
+      "0.81429",
+      "0.93929",
+      "0.79286",
+      "1.00000"
+    ]
+  ],
+  "10": [
+    [
+      "Alternative",
+      "EDAS",
+      "WASPAS",
+      "CoCoSo",
+      "TOPSIS",
+      "VIKOR",
+      "Borda sum",
+      "Mean",
+      "SD",
+      "Range",
+      "Top-3 count"
+    ],
+    [
+      "Çankaya",
+      "5",
+      "1",
+      "6",
+      "9",
+      "7",
+      "28",
+      "5.6000",
+      "2.6533",
+      "1–9",
+      "1"
+    ],
+    [
+      "Yenimahalle",
+      "1",
+      "2",
+      "2",
+      "2",
+      "5",
+      "12",
+      "2.4000",
+      "1.3565",
+      "1–5",
+      "4"
+    ],
+    [
+      "Etimesgut",
+      "2",
+      "3",
+      "1",
+      "1",
+      "1",
+      "8",
+      "1.6000",
+      "0.8000",
+      "1–3",
+      "5"
+    ],
+    [
+      "Mamak",
+      "3",
+      "4",
+      "3",
+      "3",
+      "3",
+      "16",
+      "3.2000",
+      "0.4000",
+      "3–4",
+      "4"
+    ],
+    [
+      "Gölbaşı",
+      "6",
+      "6",
+      "4",
+      "6",
+      "2",
+      "24",
+      "4.8000",
+      "1.6000",
+      "2–6",
+      "1"
+    ],
+    [
+      "Şereflikoçhisar",
+      "9",
+      "10",
+      "12",
+      "8",
+      "13",
+      "52",
+      "10.4000",
+      "1.8547",
+      "8–13",
+      "0"
+    ],
+    [
+      "Keçiören",
+      "7",
+      "8",
+      "10",
+      "5",
+      "10",
+      "40",
+      "8.0000",
+      "1.8974",
+      "5–10",
+      "0"
+    ],
+    [
+      "Sincan",
+      "4",
+      "5",
+      "5",
+      "4",
+      "4",
+      "22",
+      "4.4000",
+      "0.4899",
+      "4–5",
+      "0"
+    ],
+    [
+      "Altındağ",
+      "10",
+      "9",
+      "8",
+      "10",
+      "11",
+      "48",
+      "9.6000",
+      "1.0198",
+      "8–11",
+      "0"
+    ],
+    [
+      "Pursaklar",
+      "11",
+      "11",
+      "9",
+      "11",
+      "8",
+      "50",
+      "10.0000",
+      "1.2649",
+      "8–11",
+      "0"
+    ],
+    [
+      "Polatlı",
+      "8",
+      "7",
+      "7",
+      "7",
+      "6",
+      "35",
+      "7.0000",
+      "0.6325",
+      "6–8",
+      "0"
+    ],
+    [
+      "Kahramankazan",
+      "12",
+      "12",
+      "11",
+      "14",
+      "9",
+      "58",
+      "11.6000",
+      "1.6248",
+      "9–14",
+      "0"
+    ],
+    [
+      "Elmadağ",
+      "13",
+      "13",
+      "13",
+      "12",
+      "12",
+      "63",
+      "12.6000",
+      "0.4899",
+      "12–13",
+      "0"
+    ],
+    [
+      "Akyurt",
+      "15",
+      "15",
+      "14",
+      "15",
+      "15",
+      "74",
+      "14.8000",
+      "0.4000",
+      "14–15",
+      "0"
+    ],
+    [
+      "Kızılcahamam",
+      "14",
+      "14",
+      "15",
+      "13",
+      "14",
+      "70",
+      "14.0000",
+      "0.6325",
+      "13–15",
+      "0"
+    ]
+  ],
+  "11": [
+    [
+      "Analysis family",
+      "Cases",
+      "Design",
+      "Consensus leader",
+      "Top-three behavior"
+    ],
+    [
+      "All-criterion perturbation",
+      "104",
+      "Each C1-C13 varied by ±5%, ±10%, ±15%, ±20%",
+      "Etimesgut 98/104; Yenimahalle 6/104",
+      "Set unchanged in 104/104; order changes in 6"
+    ],
+    [
+      "WASPAS λ sweep",
+      "5",
+      "0, 0.25, 0.50, 0.75, 1",
+      "Etimesgut 5/5",
+      "Top-three order unchanged"
+    ],
+    [
+      "CoCoSo λ sweep",
+      "5",
+      "0, 0.25, 0.50, 0.75, 1",
+      "Etimesgut 5/5",
+      "Top-three order unchanged"
+    ],
+    [
+      "VIKOR v sweep",
+      "5",
+      "0, 0.25, 0.50, 0.75, 1",
+      "Etimesgut 5/5",
+      "Top-three order unchanged"
+    ],
+    [
+      "Leave-one-criterion-out",
+      "13",
+      "One criterion removed and remaining weights normalized",
+      "Etimesgut 12/13; Yenimahalle 1/13",
+      "Set changes in 2; order changes in 3"
+    ],
+    [
+      "Grouped structural deletion",
+      "1",
+      "C11-C13 removed jointly",
+      "Yenimahalle",
+      "Yenimahalle–Etimesgut–Mamak"
+    ]
+  ],
+  "12": [
+    [
+      "Scenario",
+      "Weight structure",
+      "1st",
+      "2nd",
+      "3rd"
+    ],
+    [
+      "Baseline SF-AHP",
+      "Normalized SF-AHP weight vector",
+      "Etimesgut",
+      "Yenimahalle",
+      "Mamak"
+    ],
+    [
+      "Equal weights",
+      "wⱼ = 1/13 = 0.0769",
+      "Yenimahalle",
+      "Etimesgut",
+      "Mamak"
+    ],
+    [
+      "Demand-operational",
+      "60% to C1 and C3-C8",
+      "Yenimahalle",
+      "Etimesgut",
+      "Mamak"
+    ],
+    [
+      "Accessibility-infrastructure",
+      "60% to C2, C10 and C11",
+      "Etimesgut",
+      "Çankaya",
+      "Yenimahalle"
+    ],
+    [
+      "Economic",
+      "60% to C9",
+      "Polatlı",
+      "Şereflikoçhisar",
+      "Sincan"
+    ],
+    [
+      "Environmental-risk",
+      "60% to C12 and C13",
+      "Şereflikoçhisar",
+      "Kızılcahamam",
+      "Polatlı"
+    ]
+  ],
+  "13": [
+    [
+      "Alternative",
+      "P(rank 1)",
+      "P(top 3)",
+      "Mean rank",
+      "SD",
+      "95% rank interval"
+    ],
+    [
+      "Etimesgut",
+      "62.34%",
+      "99.98%",
+      "1.3824",
+      "0.4982",
+      "1–2"
+    ],
+    [
+      "Yenimahalle",
+      "37.62%",
+      "99.86%",
+      "1.6324",
+      "0.5033",
+      "1–2"
+    ],
+    [
+      "Mamak",
+      "0.04%",
+      "84.06%",
+      "3.1586",
+      "0.4102",
+      "3–4"
+    ],
+    [
+      "Sincan",
+      "0.00%",
+      "1.02%",
+      "4.6706",
+      "0.7896",
+      "4–6"
+    ],
+    [
+      "Gölbaşı",
+      "0.00%",
+      "0.34%",
+      "5.3394",
+      "0.7694",
+      "4–7"
+    ],
+    [
+      "Çankaya",
+      "0.00%",
+      "13.94%",
+      "5.3678",
+      "1.5942",
+      "3–8"
+    ],
+    [
+      "Polatlı",
+      "0.00%",
+      "0.70%",
+      "7.0732",
+      "1.1944",
+      "5–10"
+    ],
+    [
+      "Keçiören",
+      "0.00%",
+      "0.00%",
+      "8.2958",
+      "1.4582",
+      "6–12"
+    ],
+    [
+      "Altındağ",
+      "0.00%",
+      "0.00%",
+      "9.3626",
+      "1.0265",
+      "8–11"
+    ],
+    [
+      "Şereflikoçhisar",
+      "0.00%",
+      "0.10%",
+      "9.7794",
+      "1.5787",
+      "7–12"
+    ],
+    [
+      "Pursaklar",
+      "0.00%",
+      "0.00%",
+      "10.1446",
+      "0.7072",
+      "9–11"
+    ],
+    [
+      "Kahramankazan",
+      "0.00%",
+      "0.00%",
+      "12.1562",
+      "0.6336",
+      "11–14"
+    ],
+    [
+      "Elmadağ",
+      "0.00%",
+      "0.00%",
+      "12.8274",
+      "0.6054",
+      "11–14"
+    ],
+    [
+      "Kızılcahamam",
+      "0.00%",
+      "0.00%",
+      "13.9538",
+      "0.7868",
+      "12–15"
+    ],
+    [
+      "Akyurt",
+      "0.00%",
+      "0.00%",
+      "14.8558",
+      "0.3513",
+      "14–15"
+    ]
+  ],
+  "14": [
+    [
+      "Criterion",
+      "Description",
+      "Weighted contribution"
+    ],
+    [
+      "C4",
+      "Raw-meat load",
+      "0.07878"
+    ],
+    [
+      "C3",
+      "Meatball-product load",
+      "0.06945"
+    ],
+    [
+      "C5",
+      "Frozen-product load",
+      "0.06918"
+    ],
+    [
+      "C8",
+      "Poultry load",
+      "0.06877"
+    ],
+    [
+      "C2",
+      "Distance",
+      "0.05815"
+    ],
+    [
+      "C1",
+      "Number of branches",
+      "0.04953"
+    ],
+    [
+      "C9",
+      "Land acquisition cost",
+      "0.04757"
+    ],
+    [
+      "C7",
+      "Breakfast-product volume",
+      "0.04720"
+    ]
+  ],
+  "B1": [
+    [
+      "Criterion",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    [
+      "C1",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "EI"
+    ],
+    [
+      "C2",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "HI",
+      "HI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SMI",
+      "SMI"
+    ],
+    [
+      "C3",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "HI",
+      "HI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SMI",
+      "SMI"
+    ],
+    [
+      "C4",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "HI",
+      "SMI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SMI",
+      "EI"
+    ],
+    [
+      "C5",
+      "EI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "EI",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C6",
+      "SLI",
+      "LI",
+      "LI",
+      "LI",
+      "SLI",
+      "EI",
+      "EI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "EI",
+      "SLI"
+    ],
+    [
+      "C7",
+      "SLI",
+      "LI",
+      "LI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "SLI",
+      "SLI",
+      "EI",
+      "SLI",
+      "EI",
+      "SLI"
+    ],
+    [
+      "C8",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "EI"
+    ],
+    [
+      "C9",
+      "EI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C10",
+      "EI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "EI",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C11",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "EI"
+    ],
+    [
+      "C12",
+      "SLI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "SLI",
+      "EI",
+      "EI",
+      "SLI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C13",
+      "EI",
+      "SLI",
+      "SLI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI"
+    ]
+  ],
+  "B2": [
+    [
+      "Criterion",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    [
+      "C1",
+      "EI",
+      "LI",
+      "LI",
+      "LI",
+      "SLI",
+      "SMI",
+      "EI",
+      "LI",
+      "EI",
+      "EI",
+      "SLI",
+      "SLI",
+      "VLI"
+    ],
+    [
+      "C2",
+      "HI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "AMI",
+      "SMI",
+      "EI",
+      "VHI",
+      "VHI",
+      "SMI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C3",
+      "HI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "AMI",
+      "SMI",
+      "EI",
+      "VHI",
+      "VHI",
+      "SMI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C4",
+      "HI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "AMI",
+      "HI",
+      "EI",
+      "AMI",
+      "AMI",
+      "SMI",
+      "SMI",
+      "EI"
+    ],
+    [
+      "C5",
+      "SMI",
+      "EI",
+      "EI",
+      "SLI",
+      "EI",
+      "AMI",
+      "SMI",
+      "EI",
+      "HI",
+      "HI",
+      "EI",
+      "EI",
+      "SLI"
+    ],
+    [
+      "C6",
+      "SLI",
+      "ALI",
+      "ALI",
+      "ALI",
+      "ALI",
+      "EI",
+      "LI",
+      "ALI",
+      "SLI",
+      "SLI",
+      "VLI",
+      "ALI",
+      "ALI"
+    ],
+    [
+      "C7",
+      "EI",
+      "SLI",
+      "SLI",
+      "LI",
+      "SLI",
+      "HI",
+      "EI",
+      "SLI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SLI",
+      "LI"
+    ],
+    [
+      "C8",
+      "HI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "AMI",
+      "SMI",
+      "EI",
+      "VHI",
+      "VHI",
+      "SMI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C9",
+      "EI",
+      "VLI",
+      "VLI",
+      "ALI",
+      "LI",
+      "SMI",
+      "SLI",
+      "VLI",
+      "EI",
+      "EI",
+      "SLI",
+      "LI",
+      "ALI"
+    ],
+    [
+      "C10",
+      "EI",
+      "VLI",
+      "VLI",
+      "ALI",
+      "LI",
+      "SMI",
+      "SLI",
+      "VLI",
+      "EI",
+      "EI",
+      "SLI",
+      "LI",
+      "ALI"
+    ],
+    [
+      "C11",
+      "SMI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "EI",
+      "VHI",
+      "EI",
+      "SLI",
+      "SMI",
+      "SMI",
+      "EI",
+      "EI",
+      "SLI"
+    ],
+    [
+      "C12",
+      "SMI",
+      "EI",
+      "EI",
+      "SLI",
+      "EI",
+      "AMI",
+      "SMI",
+      "EI",
+      "HI",
+      "HI",
+      "EI",
+      "EI",
+      "SLI"
+    ],
+    [
+      "C13",
+      "VHI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "AMI",
+      "HI",
+      "EI",
+      "AMI",
+      "AMI",
+      "SMI",
+      "SMI",
+      "EI"
+    ]
+  ],
+  "B3": [
+    [
+      "Criterion",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    [
+      "C1",
+      "EI",
+      "SLI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C2",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "HI",
+      "HI",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C3",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C4",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C5",
+      "SLI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "LI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "SLI"
+    ],
+    [
+      "C6",
+      "SLI",
+      "LI",
+      "SLI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "SLI",
+      "VLI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "LI"
+    ],
+    [
+      "C7",
+      "SLI",
+      "LI",
+      "SLI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "SLI",
+      "VLI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "LI"
+    ],
+    [
+      "C8",
+      "EI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "SLI"
+    ],
+    [
+      "C9",
+      "SMI",
+      "EI",
+      "SMI",
+      "SMI",
+      "HI",
+      "VHI",
+      "VHI",
+      "SMI",
+      "EI",
+      "SMI",
+      "SMI",
+      "SMI",
+      "EI"
+    ],
+    [
+      "C10",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C11",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C12",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C13",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "HI",
+      "HI",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI"
+    ]
+  ],
+  "B4": [
+    [
+      "Criterion",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    [
+      "C1",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SMI",
+      "EI",
+      "EI",
+      "HI",
+      "EI"
+    ],
+    [
+      "C2",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SMI",
+      "EI",
+      "EI",
+      "SMI",
+      "EI"
+    ],
+    [
+      "C3",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "HI",
+      "SMI",
+      "EI",
+      "HI",
+      "SMI",
+      "SMI",
+      "HI",
+      "EI"
+    ],
+    [
+      "C4",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "HI",
+      "EI"
+    ],
+    [
+      "C5",
+      "EI",
+      "EI",
+      "SLI",
+      "SLI",
+      "EI",
+      "SMI",
+      "EI",
+      "EI",
+      "SMI",
+      "EI",
+      "EI",
+      "SMI",
+      "EI"
+    ],
+    [
+      "C6",
+      "SLI",
+      "SLI",
+      "LI",
+      "SLI",
+      "SLI",
+      "EI",
+      "EI",
+      "SLI",
+      "EI",
+      "SLI",
+      "SLI",
+      "EI",
+      "SLI"
+    ],
+    [
+      "C7",
+      "SLI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "EI",
+      "EI",
+      "EI",
+      "SLI",
+      "EI",
+      "EI",
+      "SLI",
+      "EI",
+      "SLI"
+    ],
+    [
+      "C8",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SMI",
+      "EI",
+      "EI",
+      "SMI",
+      "EI"
+    ],
+    [
+      "C9",
+      "SLI",
+      "SLI",
+      "LI",
+      "SLI",
+      "SLI",
+      "EI",
+      "EI",
+      "SLI",
+      "EI",
+      "SLI",
+      "SLI",
+      "EI",
+      "SLI"
+    ],
+    [
+      "C10",
+      "EI",
+      "EI",
+      "SLI",
+      "SLI",
+      "EI",
+      "SMI",
+      "EI",
+      "EI",
+      "SMI",
+      "EI",
+      "EI",
+      "SMI",
+      "EI"
+    ],
+    [
+      "C11",
+      "EI",
+      "EI",
+      "SLI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SMI",
+      "EI",
+      "EI",
+      "SMI",
+      "EI"
+    ],
+    [
+      "C12",
+      "LI",
+      "SLI",
+      "LI",
+      "LI",
+      "SLI",
+      "EI",
+      "EI",
+      "SLI",
+      "EI",
+      "SLI",
+      "SLI",
+      "EI",
+      "SLI"
+    ],
+    [
+      "C13",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SMI",
+      "EI",
+      "EI",
+      "SMI",
+      "EI"
+    ]
+  ],
+  "B5": [
+    [
+      "Criterion",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    [
+      "C1",
+      "EI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "EI",
+      "HI",
+      "HI",
+      "SLI",
+      "EI",
+      "EI",
+      "SLI",
+      "LI",
+      "LI"
+    ],
+    [
+      "C2",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "AMI",
+      "AMI",
+      "EI",
+      "HI",
+      "SMI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C3",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "AMI",
+      "AMI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SLI",
+      "SLI"
+    ],
+    [
+      "C4",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "AMI",
+      "AMI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C5",
+      "EI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "EI",
+      "HI",
+      "HI",
+      "EI",
+      "EI",
+      "EI",
+      "SLI",
+      "SLI",
+      "SLI"
+    ],
+    [
+      "C6",
+      "LI",
+      "ALI",
+      "ALI",
+      "ALI",
+      "LI",
+      "EI",
+      "EI",
+      "ALI",
+      "SLI",
+      "LI",
+      "ALI",
+      "ALI",
+      "ALI"
+    ],
+    [
+      "C7",
+      "LI",
+      "ALI",
+      "ALI",
+      "ALI",
+      "LI",
+      "EI",
+      "EI",
+      "ALI",
+      "SLI",
+      "LI",
+      "ALI",
+      "ALI",
+      "ALI"
+    ],
+    [
+      "C8",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "EI",
+      "AMI",
+      "AMI",
+      "EI",
+      "SMI",
+      "SMI",
+      "EI",
+      "SLI",
+      "SLI"
+    ],
+    [
+      "C9",
+      "EI",
+      "LI",
+      "SLI",
+      "SLI",
+      "EI",
+      "SMI",
+      "SMI",
+      "SLI",
+      "EI",
+      "EI",
+      "LI",
+      "LI",
+      "LI"
+    ],
+    [
+      "C10",
+      "EI",
+      "SLI",
+      "SLI",
+      "SLI",
+      "EI",
+      "HI",
+      "HI",
+      "SLI",
+      "EI",
+      "EI",
+      "SLI",
+      "LI",
+      "LI"
+    ],
+    [
+      "C11",
+      "SMI",
+      "EI",
+      "EI",
+      "EI",
+      "SMI",
+      "AMI",
+      "AMI",
+      "EI",
+      "HI",
+      "SMI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C12",
+      "HI",
+      "EI",
+      "SMI",
+      "EI",
+      "SMI",
+      "AMI",
+      "AMI",
+      "SMI",
+      "HI",
+      "HI",
+      "EI",
+      "EI",
+      "EI"
+    ],
+    [
+      "C13",
+      "HI",
+      "EI",
+      "SMI",
+      "EI",
+      "SMI",
+      "AMI",
+      "AMI",
+      "SMI",
+      "HI",
+      "HI",
+      "EI",
+      "EI",
+      "EI"
+    ]
+  ],
+  "C1": [
+    [
+      "Alternative",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    [
+      "Çankaya",
+      "4",
+      "381",
+      "4,950",
+      "330",
+      "9.96",
+      "318.54",
+      "97.06",
+      "9.78",
+      "31,947",
+      "652,255.63",
+      "0.71654",
+      "280.90325",
+      "173.30667"
+    ],
+    [
+      "Yenimahalle",
+      "4",
+      "390",
+      "4,550",
+      "303",
+      "9.60",
+      "312.32",
+      "83.81",
+      "9.63",
+      "9,101",
+      "494,248.73",
+      "0.70000",
+      "265.05119",
+      "162.91211"
+    ],
+    [
+      "Etimesgut",
+      "3",
+      "330",
+      "4,000",
+      "303",
+      "9.32",
+      "300.16",
+      "80.11",
+      "8.22",
+      "11,763",
+      "433,233.73",
+      "0.82727",
+      "200.11348",
+      "122.40094"
+    ],
+    [
+      "Mamak",
+      "2",
+      "384",
+      "4,350",
+      "290",
+      "9.27",
+      "294.43",
+      "81.58",
+      "8.43",
+      "5,450",
+      "472,875.36",
+      "0.71094",
+      "249.34986",
+      "153.39018"
+    ],
+    [
+      "Gölbaşı",
+      "2",
+      "362",
+      "3,350",
+      "267",
+      "9.26",
+      "294.19",
+      "66.73",
+      "4.64",
+      "6,619",
+      "118,374.85",
+      "0.75414",
+      "186.41001",
+      "112.81997"
+    ],
+    [
+      "Şereflikoçhisar",
+      "2",
+      "433",
+      "1,050",
+      "260",
+      "8.89",
+      "285.98",
+      "38.32",
+      "2.52",
+      "2,398",
+      "22,489.24",
+      "0.63048",
+      "91.92442",
+      "49.62432"
+    ],
+    [
+      "Keçiören",
+      "1",
+      "399",
+      "4,550",
+      "250",
+      "8.80",
+      "247.08",
+      "2.37",
+      "6.99",
+      "6,565",
+      "638,229.57",
+      "0.68421",
+      "260.71297",
+      "162.03472"
+    ],
+    [
+      "Sincan",
+      "1",
+      "351",
+      "3,900",
+      "227",
+      "8.42",
+      "229.85",
+      "74.94",
+      "6.25",
+      "4,514",
+      "414,675.71",
+      "0.77778",
+      "201.33126",
+      "124.74539"
+    ],
+    [
+      "Altındağ",
+      "1",
+      "417",
+      "3,750",
+      "223",
+      "7.56",
+      "222.55",
+      "74.49",
+      "5.93",
+      "8,567",
+      "286,379.32",
+      "0.65468",
+      "230.42393",
+      "142.73184"
+    ],
+    [
+      "Pursaklar",
+      "1",
+      "405",
+      "3,400",
+      "223",
+      "7.38",
+      "215.60",
+      "68.24",
+      "4.89",
+      "6,155",
+      "115,683.49",
+      "0.67407",
+      "204.75390",
+      "126.42196"
+    ],
+    [
+      "Polatlı",
+      "1",
+      "273",
+      "3,350",
+      "210",
+      "2.21",
+      "205.71",
+      "62.84",
+      "4.53",
+      "2,429",
+      "90,347.39",
+      "1.00000",
+      "135.06741",
+      "83.51664"
+    ],
+    [
+      "Kahramankazan",
+      "1",
+      "387",
+      "3,050",
+      "203",
+      "5.47",
+      "171.16",
+      "52.18",
+      "4.48",
+      "7,335",
+      "43,252.96",
+      "0.70543",
+      "174.04606",
+      "108.13480"
+    ],
+    [
+      "Elmadağ",
+      "1",
+      "402",
+      "2,100",
+      "140",
+      "5.19",
+      "164.76",
+      "50.11",
+      "3.58",
+      "2,958",
+      "31,266.14",
+      "0.67910",
+      "127.75944",
+      "77.89262"
+    ],
+    [
+      "Akyurt",
+      "1",
+      "428",
+      "2,050",
+      "137",
+      "4.51",
+      "135.04",
+      "43.22",
+      "2.55",
+      "5,370",
+      "32,164.86",
+      "0.63785",
+      "130.98053",
+      "80.70828"
+    ],
+    [
+      "Kızılcahamam",
+      "1",
+      "335",
+      "750",
+      "110",
+      "2.33",
+      "118.50",
+      "38.12",
+      "1.36",
+      "4,138",
+      "19,071.08",
+      "0.81493",
+      "44.09270",
+      "25.46325"
+    ]
+  ]
+}

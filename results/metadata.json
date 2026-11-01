@@ -1,0 +1,42 @@
+{
+  "analysis_version": "2.0.0",
+  "primary_model": "Equal-weight aggregation of five practitioner matrices in Appendix B",
+  "random_generator": "numpy.random.Generator(PCG64(42))",
+  "alpha": 200,
+  "seed": 42,
+  "simulations": 5000,
+  "statistics": {
+    "kendall_W": 0.9071428571428571,
+    "chi_square": 63.5,
+    "df": 14,
+    "p_approx": 2.8291624979233775e-08,
+    "VIKOR_first": "Etimesgut",
+    "VIKOR_second": "Gölbaşı",
+    "VIKOR_Q_gap": 0.17699929714057402,
+    "VIKOR_DQ": 0.07142857142857142,
+    "VIKOR_advantage": true,
+    "VIKOR_stability": true
+  },
+  "checks": {
+    "Primary_weight_sum": 1.0,
+    "All_practitioner_CR_below_0.1": true,
+    "Spherical_priority_feasible": true,
+    "Climate_positive_excess": 5.900000000000001,
+    "Simulation_count": 5000,
+    "All_draws_unit_sum": true,
+    "All_consensus_ranks_permutations": true
+  },
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "input_sha256": {
+    "data/criteria.csv": "4ed8c5586883de587f8d080a0fd6ac08a06a411cb029d89b00961e76f317b0df",
+    "data/fuzzy_scale.csv": "7b1196560a1cfe060242d99d97be4f7ffcb10338860df78a80b8c6ac9294c5a2",
+    "data/observed_inputs.csv": "97cb9c18d3554c9b89418a95a9dc41fa133433a3019a66f3cbc2c16584e95848",
+    "data/pairwise_practitioners.csv": "5ce84c42172ffcbde8275ed5acb429103796ad275a635167eac723c67a7bdc20",
+    "data/parameters.json": "93dccb54fb2ae1ab40a0a0f7dc0de3d4c123a9c032f8a26a954e6f3ceb5ffa9e",
+    "data/practitioners.csv": "a8530f8fee84469e633bb2b9a35415f9df0107f7000aac35c1b12211d3997441",
+    "data/static_tables.json": "feae33386448c0c10745eabfbb92966b735b266d213487a06f86cc460ce2ea61"
+  }
+}

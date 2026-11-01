@@ -1,0 +1,14 @@
+Code,Criterion,Weight,Rank
+C2,Road distance from Yenişehir,0.09033,1
+C4,Raw-meat load,0.08980,2
+C3,Meatball-product load,0.08975,3
+C13,Cold-chain risk coefficient,0.08972,4
+C8,Poultry load,0.08441,5
+C11,Main-road connectivity,0.08255,6
+C12,Carbon emissions,0.07881,7
+C5,Frozen-product load,0.07541,8
+C1,Number of branches,0.07429,9
+C9,Land acquisition cost,0.06964,10
+C10,Workforce accessibility,0.06948,11
+C7,Breakfast-product volume,0.05749,12
+C6,Consumables volume,0.04833,13

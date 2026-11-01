@@ -1,0 +1,7 @@
+Scenario,First,Second,Third
+Baseline SF-AHP,Etimesgut,Yenimahalle,Mamak
+Equal weights,Yenimahalle,Etimesgut,Mamak
+Demand-operational,Yenimahalle,Etimesgut,Mamak
+Accessibility-infrastructure,Etimesgut,Çankaya,Yenimahalle
+Economic,Polatlı,Şereflikoçhisar,Sincan
+Environmental-risk,Şereflikoçhisar,Kızılcahamam,Polatlı

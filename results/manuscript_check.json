@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "approved_manuscript_sha256": "2d72dd67906e3e24456468d7a7a1cf44610cf71316ae0d52233396421b86311c",
+  "publication_tables_compared": 21,
+  "table_cells_compared": 2026,
+  "architecture_byte_identical": true,
+  "numeric_figures_pixel_identical": [
+    true,
+    true
+  ],
+  "failures": []
+}

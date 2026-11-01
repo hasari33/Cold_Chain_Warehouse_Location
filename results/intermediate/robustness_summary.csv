@@ -1,0 +1,7 @@
+Family,Cases,Leaders,Same_top3_set,Same_top3_order
+Weight perturbation,104,Etimesgut: 98; Yenimahalle: 6,104,98
+WASPAS parameter,5,Etimesgut: 5,5,5
+CoCoSo parameter,5,Etimesgut: 5,5,5
+VIKOR parameter,5,Etimesgut: 5,5,5
+Single criterion deletion,13,Etimesgut: 12; Yenimahalle: 1,11,10
+Grouped deletion,1,Yenimahalle: 1,1,0
